@@ -1238,7 +1238,7 @@
 
 /mob/living/carbon/human/updatehealth()
 	if(LAZYLEN(attributes))
-		maxHealth = DEFAULT_HUMAN_MAX_HEALTH + round(get_attribute_level(src, CONSTITUTION_ATTRIBUTE) * CONSTITUION_MOD + get_level_bonus(src, CONSTITUION_ATTRIBUTE))
+		maxHealth = DEFAULT_HUMAN_MAX_HEALTH + round(get_attribute_level(src, CONSTITUTION_ATTRIBUTE) * CONSTITUTION_MOD + get_level_bonus(src, CONSTITUTION_ATTRIBUTE))
 		maxSanity = DEFAULT_HUMAN_MAX_SANITY + round(get_attribute_level(src, WISDOM_ATTRIBUTE) * WISDOM_MOD + get_level_bonus(src, WISDOM_ATTRIBUTE))
 	. = ..()
 	dna?.species.spec_updatehealth(src)

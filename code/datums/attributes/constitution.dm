@@ -5,4 +5,4 @@
 	initial_stat_value = DEFAULT_HUMAN_MAX_HEALTH
 
 /datum/attribute/constitution/get_printed_level_bonus()
-	return round(level * CONSITUTION_MOD) + initial_stat_value
+	return round(level * CONSTITUTION_MOD) + initial_stat_value

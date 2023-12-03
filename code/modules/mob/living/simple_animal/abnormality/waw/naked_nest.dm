@@ -350,7 +350,7 @@
 	..()
 	var/mob/living/carbon/human/H = M
 	H.add_movespeed_mod_immunities(type, /datum/movespeed_modifier/damage_slowdown)
-	H.add_movespeed_mod_immunities(type, /datum/movespeed_modifier/justice_attribute)
+	H.add_movespeed_mod_immunities(type, /datum/movespeed_modifier/dexterity_attribute)
 	originalskintone = H.skin_tone
 
 /obj/item/organ/naked_nest/on_find(mob/living/finder)
@@ -416,7 +416,7 @@
 	if(!H)
 		return
 	H.remove_movespeed_mod_immunities(type, /datum/movespeed_modifier/damage_slowdown)
-	H.remove_movespeed_mod_immunities(type, /datum/movespeed_modifier/justice_attribute)
+	H.remove_movespeed_mod_immunities(type, /datum/movespeed_modifier/dexterity_attribute)
 	if(ishuman(H) && physical_symptoms == 1)
 		H.skin_tone = originalskintone
 		H.regenerate_icons()
