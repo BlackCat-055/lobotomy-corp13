@@ -3,6 +3,12 @@ GLOBAL_LIST_INIT(attribute_types, list(
 	/datum/attribute/prudence,
 	/datum/attribute/temperance,
 	/datum/attribute/justice,
+	/datum/attribute/strength,
+	/datum/attribute/dexterity,
+	/datum/attribute/constitution,
+	/datum/attribute/perception,
+	/datum/attribute/wisdom,
+	/datum/attribute/intelligience
 	))
 
 /datum/attribute
@@ -11,9 +17,9 @@ GLOBAL_LIST_INIT(attribute_types, list(
 	/// Current level of the skill
 	var/level = 0
 	/// How high it can go
-	var/level_limit = 130
+	var/level_limit = 200
 	/// How low it can get
-	var/level_lower_limit = 0
+	var/level_lower_limit = -50
 	/// A buff to the level, separate from it. Allows attributes to get higher than the limit.
 	var/level_buff = 0
 	/// A buff to the raw stat, does not affect work rates, mechanics, etc.
