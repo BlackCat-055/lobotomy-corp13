@@ -6,3 +6,4 @@
 
 /datum/attribute/constitution/get_printed_level_bonus()
 	return round(level * CONSTITUTION_MOD) + initial_stat_value
+

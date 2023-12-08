@@ -1,7 +1,7 @@
 /datum/attribute/dexterity
 	name = DEXTERITY_ATTRIBUTE
 	desc = "Attribute that will be responsible for movement speed and eventually attack chance."
-	//affected_stats = list("Work Modifier") //todo: make this affect movement speed and add in an attack chance thing
+	affected_stats = list("Speed Modifier") //todo: make this affect movement speed and add in an attack chance thing
 
 /datum/attribute/dexterity/on_update(mob/living/carbon/user)
 	if(!istype(user))
