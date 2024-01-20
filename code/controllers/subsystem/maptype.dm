@@ -39,7 +39,7 @@ SUBSYSTEM_DEF(maptype)
 	//Badda Bing Badda Da. This makes the latejoin menu cleaner
 	switch(SSmaptype.maptype)
 		if("wonderlabs", "city")
-			departments = list("Command", "Security", "Service", "Science")
+			departments = list("Command", "Security", "Service", "Science","Engineering")
 		if("rcorp", "wcorp")
 			departments = list("Command", "Security")
 

@@ -198,6 +198,20 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 /obj/item/radio/headset/syndicatecity/heads
 	command = TRUE
 
+//CoL13 Workshop Fixer Headsets
+/obj/item/radio/headset/workshop
+	name = "radio headset"
+	desc = "A headset used by the local Prosthetics Workshop, has a special encryption key for private communication"
+	icon_state = "headset"
+	inhand_icon_state = "headset"
+	keyslot = new /obj/item/encryptionkey/headset_control
+
+/obj/item/radio/headset/workshop/maestro
+	command = TRUE
+
+
+/obj/item/radio/headset/syndicatecity/heads
+	command = TRUE
 
 /obj/item/radio/headset/heads
 	command = TRUE

@@ -39,6 +39,9 @@
 
 		if(istype(processing, /datum/job/mittlehammer))
 			processing.total_positions = 2
+//This is me trying to see if I can co-opt the system for spawning the antag faction and make it so the workshop spawns alongside the N-Corp
+		if(istype(processing, /datum/job/maestro))
+			processing.total_positions = 1
 	. = ..()
 
 

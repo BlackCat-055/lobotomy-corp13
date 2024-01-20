@@ -43,6 +43,8 @@ GLOBAL_LIST_INIT(command_positions, list(
 
 
 GLOBAL_LIST_INIT(engineering_positions, list(
+	"Prosthetics Workshop Maestro",
+	"Prosthetics Workshop Fixer",
 	))
 
 
