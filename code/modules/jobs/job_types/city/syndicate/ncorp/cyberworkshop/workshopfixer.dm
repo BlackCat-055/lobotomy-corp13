@@ -32,7 +32,7 @@
 
 
 /datum/outfit/job/workshopfixer
-	name = "N Corp Mittlehammer"
+	name = "Prosthetic Workshop Fixer"
 	jobtype = /datum/job/workshopfixer
 	belt = /obj/item/pda/engineering
 	ears = /obj/item/radio/headset/workshop

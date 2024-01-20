@@ -264,4 +264,88 @@
 		eat_time = 0)
 	return
 
+//Section for Prosthetic Workshop Stuff
 
+/obj/item/tresmetal/prosthetic
+	name = "augmented tres metal"
+	desc = "Specialized metal used for forging into prosthetics."
+	icon = 'ModularTegustation/Teguicons/workshop.dmi'
+	icon_state = "tresmetal"
+	w_class = WEIGHT_CLASS_BULKY
+	resource_type = /obj/item/tresmetal/prosthetic
+	heated_type = /obj/item/hot_tresmetal/prosthetic
+
+/*
+/obj/item/tresmetal/Initialize()
+	. = ..()
+	desc += " Put into the forge to heat it."
+*/
+
+/obj/item/hot_tresmetal/prosthetic
+	name = "heated augmented tres metal"
+	desc = "Metal used for forging workshop augments."
+	icon = 'ModularTegustation/Teguicons/workshop.dmi'
+	icon_state = "tresmetal_hot"
+	w_class = WEIGHT_CLASS_BULKY
+	matname = "aug-tressium"
+	original_mat = /obj/item/tresmetal/prosthetic
+
+/*
+/obj/item/hot_tresmetal/attackby(obj/item/I, mob/living/user, params)
+	..()
+	if(istype(I, /obj/item/forginghammer))
+		if(!(locate(/obj/structure/table/anvil) in loc))
+			to_chat(user, span_warning("You need this to be on an anvil to work it."))
+			return
+
+		if(!do_after(user, 10 SECONDS))
+			return
+
+		var/list/display_names = generate_display_names()
+		if(!display_names.len)
+			return
+		var/choice = input(user,"Which item would you like to make?","Select an Item") as null|anything in sortList(display_names)
+		if(!choice || !user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
+			return
+		spawn_option(display_names[choice])
+*/
+/obj/item/hot_tresmetal/prosthetic/generate_display_names()
+	var/static/list/augment_types
+	if(!augment_types)
+		augment_types = list()
+		var/list/auglist = subtypesof(/obj/item/organ/cyberimp) //we have to convert type = name to name = type, how lovely!
+		for(var/V in auglist)
+			var/atom/A = V
+			augment_types[initial(A.name)] = A
+	return augment_types
+/*
+/obj/item/hot_tresmetal/prosthetic/proc/spawn_option(obj/item/choice)
+	var/obj/item/creation = new choice(get_turf(src))
+	OnCreation(creation)
+	visible_message(span_notice("The tresmetal is worked into a [creation.name]."))
+	deltimer(cool_timer)
+	qdel(src)
+
+/obj/item/hot_tresmetal/prosthetic/proc/OnCreation(obj/item/ego_weapon/template/creation)
+	if(!istype(creation))
+		return FALSE
+	creation.force *= force_mod
+	creation.force += force_bonus
+	creation.attack_speed *= attack_mult
+	if(type_override)
+		creation.damtype = type_override
+		creation.type_overriden = TRUE
+	if(hitsound_override)
+		creation.hitsound = hitsound_override
+	if(quality)
+		if(attack_mult < 1)
+			creation.attack_speed /= quality > 2 ? 1.4 : (quality * 0.1) + 1
+		else
+			creation.force *= quality > 2 ? 1.4 : (quality * 0.1) + 1
+	for(var/i = 1 to creation.finishedname.len)
+		creation.finishedname[i] = matname + " " + creation.finishedname[i]
+	if(color)
+		creation.color = color
+	return TRUE
+
+*/

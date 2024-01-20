@@ -16,7 +16,6 @@
 	paycheck = 700
 	maptype = list("city")
 	job_important = "This is a roleplay role. You are the Maestro or Head of the local Prosthetics Workshop. \
-		Your goal is simple, kill and torture everyone with prosthetics, and anyone who defends them. \
 		Create prosthetics and augments to sell to your customers. Direct and teach your apprentices. Gather materials from the Backstreets to make your prosthetics\
 		You only have two Fixers under your belt, only you and they know your art of crafting prosthetics. \
 		(INSERT LOCATION FOR WORKSHOP. ERROR NO WORKSHOP DETECTED)."
@@ -44,7 +43,7 @@
 	name = "Workshop Maestro"
 	jobtype = /datum/job/maestro
 	belt = /obj/item/pda/engineering
-	ears = /obj/item/radio/headset/workshop/head
+	ears = /obj/item/radio/headset/workshop/maestro
 	uniform = /obj/item/clothing/under/suit/lobotomy/plain
 	backpack_contents = list()
 	shoes = /obj/item/clothing/shoes/laceup
