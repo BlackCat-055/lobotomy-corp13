@@ -593,7 +593,13 @@
 	name = "An Idiot's Guide to Making Augments: Basic Idition"
 	desc = "A copied collection of various drunken notes and diagrams all collated into one book. Gauranteed to teach anyone how to make augments and prosthetics if they can even figure how to read the damn notes"
 	crafting_recipe_types = list(
-
+		/datum/crafting_recipe/aug_head,
+		/datum/crafting_recipe/aug_larm,
+		/datum/crafting_recipe/aug_rarm,
+		/datum/crafting_recipe/aug_torso,
+		/datum/crafting_recipe/aug_rleg,
+		/datum/crafting_recipe/aug_lleg.
+		/datum/crafting_recipe/workshop_surgeryimplant
 	)
 	icon_state = "book"
 	remarks = list("What the fuck am I reading?","Okay...so I think the circuits goes there...", "Wait was it the synthetic polymer carbon or synthetic polytitanium fiber for the inside?", "Why the fuck would you put a laser in your head", "Okay I did not know you can put that many blades in a single arm")
@@ -603,7 +609,14 @@
 	name = "An Idiot's Guide to Making Augments: Maestro Edition"
 	desc = "Your personal collection of various scrambled notes and diagrams all collated into one book. Gauranteed to make you remember all your work in case of any drug or alcohol-induced amnesia. Hangover cure included for free!"
 	crafting_recipe_types = list(
-
+		/datum/crafting_recipe/aug_head,
+		/datum/crafting_recipe/aug_larm,
+		/datum/crafting_recipe/aug_rarm,
+		/datum/crafting_recipe/aug_torso,
+		/datum/crafting_recipe/aug_rleg,
+		/datum/crafting_recipe/aug_lleg,
+		/datum/crafting_recipe/workshop_surgeryimplant,
+		/datum/crafting_recipe/workshop_medibeam
 	)
 	icon_state = "book"
 	remarks = list("Where is that damn hangover cure!?", "OKay so connect the fusion battery to resistors before connecting to the heart or else the heart will risk immediate impplosion", "Polymer synthtic plas-fiber for internal organ protective shielding, Polytitanium fibres for Limbs and extremities", "I really need to re-arrange my notes better", "Oh so that's where I placed that phone number from the crazy hot bitch from the N-District", "Wonder if I can top my record of four different blades in one arm")

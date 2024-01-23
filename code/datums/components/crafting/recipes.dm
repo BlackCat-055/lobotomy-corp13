@@ -1856,3 +1856,94 @@
 	category = CAT_CLOTHING
 
 //PROSTHETIC WORKSHOP STUFF
+
+/datum/crafting_recipe/aug_head
+	name = "Augmented head"
+	result = /obj/item/bodypart/head/robot/workshop
+	reqs = list(/obj/item/pros_workshop/casing= 2,
+				/obj/item/pros_workshop/circuits = 3)
+	time = 10
+	always_available = FALSE
+	category = CAT_ROBOT
+
+/datum/crafting_recipe/aug_larm
+	name = "Augmented left arm"
+	result = /obj/item/bodypart/l_arm/robot/workshop
+	reqs = list(/obj/item/pros_workshop/casing= 2,
+				/obj/item/pros_workshop/circuits = 3)
+	time = 10
+	always_available = FALSE
+	category = CAT_ROBOT
+
+/datum/crafting_recipe/aug_rarm
+	name = "Augmented right arm"
+	result = /obj/item/bodypart/r_leg/robot/workshop
+	reqs = list(/obj/item/pros_workshop/casing= 2,
+				/obj/item/pros_workshop/circuits = 3)
+	time = 10
+	always_available = FALSE
+	category = CAT_ROBOT
+
+/datum/crafting_recipe/aug_torso
+	name = "Augmented torso"
+	result = /obj/item/bodypart/chest/robot/workshop
+	reqs = list(/obj/item/pros_workshop/casing= 2,
+				/obj/item/pros_workshop/circuits = 3)
+	time = 10
+	always_available = FALSE
+	category = CAT_ROBOT
+
+/datum/crafting_recipe/aug_rleg
+	name = "Augmented right leg"
+	result = /obj/item/bodypart/r_leg/robot/workshop
+	reqs = list(/obj/item/pros_workshop/casing= 2,
+				/obj/item/pros_workshop/circuits = 3)
+	time = 10
+	always_available = FALSE
+	category = CAT_ROBOT
+
+/datum/crafting_recipe/aug_lleg
+	name = "Augmented left leg"
+	result = /obj/item/bodypart/l_leg/robot/workshop
+	reqs = list(/obj/item/pros_workshop/casing= 2,
+				/obj/item/pros_workshop/circuits = 3)
+	time = 10
+	always_available = FALSE
+	category = CAT_ROBOT
+
+/datum/crafting_recipe/workshop_surgeryimplant
+	name = "Surgery toolset implant"
+	result = /obj/item/organ/cyberimp/arm/workshop/surgery
+	reqs = list(/obj/item/pros_workshop/casing= 1,
+				/obj/item/pros_workshop/circuits = 1)
+	time = 10
+	always_available = FALSE
+	category = CAT_ROBOT
+
+/datum/crafting_recipe/workshop_medibeam
+	name = "Medibeam implant"
+	result = /obj/item/organ/cyberimp/arm/workshop/medibeam
+	reqs = list(/obj/item/pros_workshop/casing= 1,
+				/obj/item/pros_workshop/circuits = 1)
+	time = 10
+	always_available = FALSE
+	category = CAT_ROBOT
+
+/datum/crafting_recipe/workshop_medibeam
+	name = "Medibeam implant"
+	result = /obj/item/organ/cyberimp/arm/workshop/medibeam
+	reqs = list(/obj/item/pros_workshop/casing= 1,
+				/obj/item/pros_workshop/circuits = 1)
+	time = 10
+	always_available = FALSE
+	category = CAT_ROBOT
+
+
+/datum/crafting_recipe/workshop_medibeam
+	name = "Medibeam implant"
+	result = /obj/item/organ/cyberimp/arm/workshop/medibeam
+	reqs = list(/obj/item/pros_workshop/casing= 1,
+				/obj/item/pros_workshop/circuits = 1)
+	time = 10
+	always_available = FALSE
+	category = CAT_ROBOT

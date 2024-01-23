@@ -37,5 +37,7 @@
 	belt = /obj/item/pda/engineering
 	ears = /obj/item/radio/headset/workshop
 	uniform = /obj/item/clothing/under/suit/lobotomy/plain
-	backpack_contents = list()
+	backpack_contents = list(
+		/obj/item/book/granter/crafting_recipe/prosthetic_workshop = 1a
+	)
 	shoes = /obj/item/clothing/shoes/laceup
