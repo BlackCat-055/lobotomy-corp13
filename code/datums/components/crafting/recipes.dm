@@ -1854,3 +1854,5 @@
 	time = 15
 	always_available = FALSE
 	category = CAT_CLOTHING
+
+//PROSTHETIC WORKSHOP STUFF

@@ -584,3 +584,28 @@
 	)
 	icon_state = "advanced_silkweaving_book"
 	remarks = list("Make sure that you always have your weaving knife on you? I already knew that.", "Using sweepers as silk? That is brand new...", "Huh, it says here that 'Be careful around the fixer association...' ", "This book smells quite well, Like it was just made just for me!", "A rookie must have made this page, or they forgot to spell check it before printing...", "Wait, how will this turn a profit? I spent like 1000 ahn for this book!")
+
+
+//Prosthetic Workshop stuff
+
+
+/obj/item/book/granter/crafting_recipe/prosthetic_workshop
+	name = "An Idiot's Guide to Making Augments: Basic Idition"
+	desc = "A copied collection of various drunken notes and diagrams all collated into one book. Gauranteed to teach anyone how to make augments and prosthetics if they can even figure how to read the damn notes"
+	crafting_recipe_types = list(
+
+	)
+	icon_state = "book"
+	remarks = list("What the fuck am I reading?","Okay...so I think the circuits goes there...", "Wait was it the synthetic polymer carbon or synthetic polytitanium fiber for the inside?", "Why the fuck would you put a laser in your head", "Okay I did not know you can put that many blades in a single arm")
+
+
+/obj/item/book/granter/crafting_recipe/prosthetic_workshop/maestro
+	name = "An Idiot's Guide to Making Augments: Maestro Edition"
+	desc = "Your personal collection of various scrambled notes and diagrams all collated into one book. Gauranteed to make you remember all your work in case of any drug or alcohol-induced amnesia. Hangover cure included for free!"
+	crafting_recipe_types = list(
+
+	)
+	icon_state = "book"
+	remarks = list("Where is that damn hangover cure!?", "OKay so connect the fusion battery to resistors before connecting to the heart or else the heart will risk immediate impplosion", "Polymer synthtic plas-fiber for internal organ protective shielding, Polytitanium fibres for Limbs and extremities", "I really need to re-arrange my notes better", "Oh so that's where I placed that phone number from the crazy hot bitch from the N-District", "Wonder if I can top my record of four different blades in one arm")
+
+

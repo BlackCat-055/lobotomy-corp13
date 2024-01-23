@@ -313,7 +313,7 @@
 	var/static/list/augment_types
 	if(!augment_types)
 		augment_types = list()
-		var/list/auglist = subtypesof(/obj/item/organ/cyberimp) //we have to convert type = name to name = type, how lovely!
+		var/list/auglist = subtypesof(/obj/item/pros_workshop // obj/item/pros_workshop is what Ill use so that I sidestep the whole "workshop can't make seperate stuff stuff"
 		for(var/V in auglist)
 			var/atom/A = V
 			augment_types[initial(A.name)] = A
