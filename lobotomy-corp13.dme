@@ -4023,6 +4023,7 @@
 #include "ModularTegustation\tegu_items\workshop\forging.dm"
 #include "ModularTegustation\tegu_items\workshop\ordeal extractor.dm"
 #include "ModularTegustation\tegu_items\workshop\vending.dm"
+#include "ModularTegustation\tegu_items\workshop\augments\auglimbs.dm"
 #include "ModularTegustation\tegu_items\workshop\mods\aoe.dm"
 #include "ModularTegustation\tegu_items\workshop\mods\basic.dm"
 #include "ModularTegustation\tegu_items\workshop\mods\curing.dm"
